@@ -1,11 +1,11 @@
 {
-    "name": "msonowal/laravel-razor-pay-cashier",
+    "name": "robinflyhigh/laravel-razor-pay-cashier",
     "description": "Laravel Cashier provides an expressive, fluent interface to Razorpay's subscription billing services.",
     "keywords": ["laravel", "razorpay", "subscription", "billing"],
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/msonowal/laravel-razor-pay-cashier/issues",
-        "source": "https://github.com/msonowal/laravel-razor-pay-cashier"
+        "issues": "https://github.com/robinflyhigh/laravel-razor-pay-cashier/issues",
+        "source": "https://github.com/robinflyhigh/laravel-razor-pay-cashier"
     },
     "authors": [
         {
