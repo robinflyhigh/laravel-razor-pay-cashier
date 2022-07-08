@@ -225,8 +225,8 @@ class SubscriptionBuilder
     public function create()
     {
         $subscription = $this->getRazorpayClient()
-                        ->subscription
-                        ->create($this->buildPayload());
+            ->subscription
+            ->create($this->buildPayload());
 
         return $this->owner->subscriptions()->create([
             'name'           => $this->name,
@@ -270,7 +270,12 @@ class SubscriptionBuilder
     {
         return array_filter([
             'plan_id'         => $this->plan,
+
+            /*
+            Not required as per https://razorpay.com/docs/api/payments/subscriptions#create-a-subscription
             'customer_id'     => $this->owner->razorpay_id,
+            */
+
             'customer_notify' => $this->customer_notify,
             'quantity'        => $this->quantity,
             'total_count'     => $this->total_count,
